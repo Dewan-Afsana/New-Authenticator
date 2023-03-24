@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.CucumberRunnerTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-14T18:12:15" hostname="DESKTOP-ACI7R7L" time="7.408">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Add customer with valid data&quot;, &quot;Optional[BankManagerLogin]&quot;)" classname="TestRunner.CucumberRunnerTests" time="7.408"/>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: Add customer with valid data        # src/test/resources/Features/login.feature:12
+  Given manager to the add customer page              # WebStepDefination.LoginStepDefination.managerToTheAddCustomerPage()
+  When manger enters 'Rafi' and 'Azwad' and '2200'    # WebStepDefination.LoginStepDefination.mangerEntersFirstNameAndLastNameAndPostCode(java.lang.String,java.lang.String,java.lang.String)
+  And click add customer button                       # WebStepDefination.LoginStepDefination.clickAddCustomerButton()
+Confirmation message: Customer added successfully with customer id :6
+  Then manager will navigate to successful popup page # WebStepDefination.LoginStepDefination.managerWillNavigateToSuccessfulPopupPage()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 59254
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 15, 2023 12:12:18 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Feb 15, 2023 12:12:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: a no-op implementation
+Feb 15, 2023 12:12:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 109.
+Feb 15, 2023 12:12:18 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
