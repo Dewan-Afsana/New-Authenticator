@@ -25,8 +25,8 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 465
-        username: ${{secrets.EMAIL_USERNAME}}
-        password: ${{secrets.EMAIL_PASSWORD}}
+        username: ${{secrets.Dewan-Afsana}}
+        password: ${{secrets.cykyzqyguorzirzv}}
         subject: Automated Test Report
         body: |
           Hi,
